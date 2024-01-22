@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Décimo Layout</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    nav li {
+        background-color: antiquewhite;
+        padding: 8px;
+        border-radius: 4px;
+        list-style: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    #skills {
+        background-color: antiquewhite;
+        border: 1px solid #fadcb4;
+        border-radius: 4px;
+    }
+
+    #skills li {
+        list-style: decimal;
+    }
+
+    #education {
+        background-color: antiquewhite;
+        border: 1px solid #fadcb4;
+        border-radius: 4px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    @media screen and (min-width: 700px) {
+        main {
+            flex-direction: row;
+            gap: 24px;
+            max-width: 1200px;
+            margin: 16px auto;
+            flex-wrap: wrap;
+        }
+    }
+
+    #presentation {
+        flex-basis: 500px;
+    }
+
+    #skills, #education {
+        flex: 1;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        flex: 1;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"></a>Sobre mim</li>
+                <li><a href="#"></a>Contato</li>
+                <li><a href="#"></a>Trabalhos</li>
+                <li><a href="#"></a>Projetos</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="presentation">
+            <h1>Kálitha Queiroz</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolore fugiat consectetur aut laborum iusto nisi ducimus repudiandae id? Autem perferendis officiis, voluptates nisi consectetur sed cumque ad necessitatibus rem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolore fugiat consectetur aut laborum iusto nisi ducimus repudiandae id? Autem perferendis officiis, voluptates nisi consectetur sed cumque ad necessitatibus rem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolore fugiat consectetur aut laborum iusto nisi ducimus repudiandae id? Autem perferendis officiis, voluptates nisi consectetur sed cumque ad necessitatibus rem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolore fugiat consectetur aut laborum iusto nisi ducimus repudiandae id? Autem perferendis officiis, voluptates nisi consectetur sed cumque ad necessitatibus rem.</p>
+        </section>
+        <section id="skills">
+            <ul>
+                <li>HTMLK</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+        <section id="education">
+            <ul>
+                <li>Análise e desenvolvimento de Sistemas</li>
+                <li>Web Designer</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

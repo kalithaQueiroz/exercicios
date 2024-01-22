@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nono Layout</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 100px repeat(3, 300px);
+        grid-template-areas: 
+        "header header header header"
+        "navbar main-content main-content main-content"
+        "navbar content-1 content-2 content-3"
+        "navbar footer footer footer";
+    }
+
+    header, nav, section, footer {
+        padding: 20px;
+    }
+
+    header {
+        background-color: antiquewhite;
+        grid-area: header;
+    }
+
+    nav {
+        background-color: antiquewhite;
+        grid-area: navbar;
+    }
+
+    .main-section-content {
+        background-color: antiquewhite;
+        grid-area: main-content;
+    }
+
+    .content-1 {
+        background-color: antiquewhite;
+        grid-area: content-1;        
+    }
+
+    .content-2 {
+        background-color: antiquewhite;
+        grid-area: content-2;
+    }
+
+    .content-3 {
+        background-color: antiquewhite;
+        grid-area: content-3;
+    }
+
+    footer {
+        background-color: antiquewhite;
+        grid-area: footer;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 8px;
+    }
+
+    li a {
+        color: #fadcb4;
+    }
+</style>
+
+<body>
+    <header>header content</header>
+    <nav>
+        <ul>
+            <li><a href="#"></a>Menu 1</li>
+            <li><a href="#"></a>Menu 2</li>
+            <li><a href="#"></a>Menu 3</li>
+            <li><a href="#"></a>Menu 4</li>
+            <li><a href="#"></a>Menu 5</li>
+        </ul>
+    </nav>
+    <section class="main-section-content">
+        main content
+    </section>
+    <section class="content-1">content 1</section>
+    <section class="content-2">content 2</section>
+    <section class="content-3">content 3</section>
+    <footer>footer content</footer>
+</body>
+</html>

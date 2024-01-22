@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Kálitha Queiroz">
+    <meta name="description" content="Portifólio de Projetos Front-End">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceiro Layout</title>
+    <link rel="icon" type="image/png" href="">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3px;
+        flex: 1 1 100vw;
+        background: #ccc;
+    }
+
+    header,
+    nav,
+    main,
+    aside,
+    footer {
+        background: #ddd;
+        display: flex;
+        margin: 3px;
+    }
+
+    header {
+        flex: 1 1 100vw;
+        height: 100px;
+    }
+
+    nav {
+        flex: 1 1 100vw;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    nav a {
+        margin: 5%;
+        font-size: 20pt;
+    }
+
+    main {
+        flex: 20 1 500px;
+        height: calc(100vh - 330px);
+    }
+
+    aside {
+        flex: 1 1 200px;
+    }
+
+    footer {
+        flex: 1 1 100vw;
+        height: 100px;
+    }
+
+    @media only screen and (max-width: 923px) {
+        main {
+            height: calc(100vh - 436px);
+        }
+
+        aside {
+            flex: 1 1 100vw;
+            height: 100px;
+        }
+    }
+</style>
+
+<body>
+
+    <header>Cabecalho</header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+    <main>Principal</main>
+    <aside>Relacionado</aside>
+    <footer>Rodape</footer>
+
+</body>
+
+</html>
