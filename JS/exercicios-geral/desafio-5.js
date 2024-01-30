@@ -13,7 +13,7 @@ const rl = readline.createInterface({
 });
 
 rl.question('Digite o valor do produto: ', (valorProduto) => {
-    rl.question('Escolha o tipo de pagamento digitando: (1 para Débito, 2 para Dinheiro ou Pix, 3 para Parcelado 2x e 4 para Parcelar acima de 3x): ', (formaPagamento) => {
+    rl.question('Escolha o tipo de pagamento digitando:\n1 para Débito;\n2 para Dinheiro ou Pix;\n3 para Parcelado 2x;\n4 para Parcelar acima de 3x. ', (formaPagamento) => {
 
         valorProduto = parseInt(valorProduto)
 
