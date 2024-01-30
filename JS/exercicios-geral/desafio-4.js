@@ -1,9 +1,9 @@
 // Elabore um algoritmo que dado peso e altura de um adulto mostre sua condição de acordo com a tabea abaixo.
 
 // 1 - Abaixo de 18.5 (Abaixo do peso);
-// 2 - Entre 18.5 e 25 (Peso normal);
-// 3 - Entre 25 e 30 (Acima do peso);
-// 4 - Entre 30 e 40 (Obeso);
+// 2 - De 18.5 até 25 (Peso normal);
+// 3 - De 25 até 30 (Acima do peso);
+// 4 - De 30 até 40 (Obeso);
 // 5 - Acima de 40 (Obesidade Grave);
 
 const readline = require('readline');
