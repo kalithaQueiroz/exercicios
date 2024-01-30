@@ -19,11 +19,11 @@ rl.question('Digite a primeira nota: ', (nota1) => {
             nota2 = parseInt(nota2);
             nota3 = parseInt(nota3);
 
-            const media = ((nota1 + nota2 + nota3) /3);
+            const media = ((nota1 + nota2 + nota3) /3).toFixed(2);
             
             if (media < 5) {
                 status = `Reprovado`
-            } else if (media > 5, media < 7) {
+            } else if (media >= 5 && media <= 7) {
                 status = `de Recuperação`
             } else {
                 status = `Aprovado`
