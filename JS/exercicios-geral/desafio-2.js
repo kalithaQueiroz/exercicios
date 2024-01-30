@@ -1,11 +1,12 @@
 // Faça um programa para calcular o valor de uma viajem.
 
-// Você terá 5 variáveis. Sendo elas:
+// Você terá 6 variáveis. Sendo elas:
 // 1 - Preço do Etanol;
 // 2 - Preço da Gasolina;
-// 3 - Tipo de combustível que está no carro;
-// 4 - Gasto médio de combustível do carro por Km;
-// 5 - Distãncia em KM da viajem;
+// 3 - Preço da Disel;
+// 4 - Tipo de combustível que está no carro;
+// 5 - Gasto médio de combustível do carro por Km;
+// 6 - Distãncia em KM da viajem;
 
 // Imprima no console o valor que será gasto para realizar esta viajem.
 
