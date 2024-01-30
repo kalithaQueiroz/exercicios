@@ -20,9 +20,17 @@ rl.question('Digite a primeira nota: ', (nota1) => {
             nota3 = parseInt(nota3);
 
             const media = ((nota1 + nota2 + nota3) /3);
+            
+            if (media < 5) {
+                status = `Reprovado`
+            } else if (media > 5, media < 7) {
+                status = `de Recuperação`
+            } else {
+                status = `Aprovado`
+            }
 
-            console.log(`A média é: ${media}`);
-
+            console.log(`A média é ${media}, e o Aluno está ${status}.`);
+            
             rl.close();
         });
     });
