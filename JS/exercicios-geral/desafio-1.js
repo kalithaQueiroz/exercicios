@@ -24,7 +24,7 @@ rl.question('Digite o valor do Combustível: ', (valorCombustivel) => {
       distanciaViagem = parseFloat(distanciaViagem);
 
       // Calcula o total
-      const total = (distanciaViagem / gastoMedioCombustivel) * valorCombustivel;
+      const total = ((distanciaViagem / gastoMedioCombustivel) * valorCombustivel).toFixed(2);
 
       // Exibe o resultado
       console.log(`O valor total é: ${total}`);
