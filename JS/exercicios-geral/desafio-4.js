@@ -32,7 +32,7 @@ function classificarImc(imc) {
 
 function main(peso, altura) {
     const imc = calcularImc(peso, altura).toFixed(2);
-    console.log(`A IMC é ${imc}Kg, e essa pessoa está ${classificarImc(imc)}.`);
+    console.log(`O peso é ${peso}Kg e a altura é ${altura}m.\n O IMC é ${imc}Kg, e essa pessoa está ${classificarImc(imc)}.`);
 }
 
 rl.question('Digite o peso: ', (peso) => {
