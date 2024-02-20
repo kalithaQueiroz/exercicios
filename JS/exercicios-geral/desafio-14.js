@@ -15,19 +15,18 @@ function print(texto) {
 
 const n = gets();
 
-let maiorNumeropar = 0;
-let menorNumeroimpar = 0;
+let maiorNumeropar = null;
+let menorNumeroimpar = null;
 
 for (let i = 0; i < n; i++) {
     const numero = gets();
+
     if (numero % 2 === 0) {
-        if (numero > maiorNumeropar) {
+        if (maiorNumeropar === null || numero > maiorNumeropar) {
             maiorNumeropar = numero;
         }
     } else {
-        if (menorNumeroimpar === 0) {
-            menorNumeroimpar = numero;
-        } else if (numero < menorNumeroimpar) {
+        if (menorNumeroimpar === null || numero < menorNumeroimpar) {
             menorNumeroimpar = numero;
         }
     }
