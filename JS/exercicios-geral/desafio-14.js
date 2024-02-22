@@ -15,22 +15,22 @@ function print(texto) {
 
 const n = gets();
 
-let maiorNumeropar = null;
-let menorNumeroimpar = null;
+let maiorNumeroPar = null;
+let menorNumeroImpar = null;
 
 for (let i = 0; i < n; i++) {
     const numero = gets();
 
     if (numero % 2 === 0) {
-        if (maiorNumeropar === null || numero > maiorNumeropar) {
-            maiorNumeropar = numero;
+        if (maiorNumeroPar === null || numero > maiorNumeroPar) {
+            maiorNumeroPar = numero;
         }
     } else {
-        if (menorNumeroimpar === null || numero < menorNumeroimpar) {
-            menorNumeroimpar = numero;
+        if (menorNumeroImpar === null || numero < menorNumeroImpar) {
+            menorNumeroImpar = numero;
         }
     }
 }
 
-print(maiorNumeropar);
-print(menorNumeroimpar);
+print(maiorNumeroPar);
+print(menorNumeroImpar);
