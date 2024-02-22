@@ -5,7 +5,7 @@
 // Desconte o percentual de imposto conforme faixa salarial.
 // Some com resultado com os beneficios.
 
-const entradas = [2000, 250];
+const entradas = [5500, 250];
 let i = 0;
 
 function gets() {
@@ -26,17 +26,18 @@ function calculoImposto(valor, percentual) {
 }
 
 function percentualSalario(salario) {
-    if (salario >= 0 && salario <= 1100){
-        return 5;
+    let aliquota;
+    if (salario >= 0 && salario <= 1100) {
+        aliquota = 0.05;
     }else if (salario >= 1100.01 && salario <= 2500){
-        return 10;
+        aliquota = 0.10;
     } else {
-        return 15;
+        aliquota = 0.15;
     }
+    return aliquota * salario;
 }
 
-const aliquitaSalario = percentualSalario(valorSalario);
-const valorImposto = calculoImposto(valorSalario,aliquitaSalario);
+const valorImposto = percentualSalario(valorSalario);
 const valorFinal = valorSalario - valorImposto + valorBeneficio;
 
-print(valorFinal);
+print(valorFinal.toFixed(2));
